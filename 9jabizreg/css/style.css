@@ -15,7 +15,7 @@
     --text-color: #333; /* Dark Gray */
     --text-color-dark: #1F1F1F; /* dark Gray */
     --text-color-light: #666; /* Light Gray */
-
+    --text-color-white: #fff;
 
     --background-color: #fff; /* White */
     --background-color-dark: #f9f9f9; /* Light Background */
@@ -255,17 +255,62 @@ h4 {
 .services {
     display: flex;
     flex-direction: column;
-    list-style: none;
      gap: 10px;
 }
+
 
 .Pre-Incorporation ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    align-items:center;
+    list-style: none;
+}
+.Pre-Incorporation img{
+    margin: 5rem 0 10px 60px;
+    
+}
+.Pre-Incorporation li{
+ background-color:var(--primary-color-dark);
+ color: var(--button-text-color);
+ display: flex;
+ flex-direction: column;
+}
+.Pre-Incorporation h2{
+    text-align: center;
+    color: var(--text-color-white);
+}
+.Pre-Incorporation p{
+    padding:0 20px;
+    font-size: var(--font-size-base);
+    align-items: center;
 }
 
-.Pre-Incorporation li{
+.Pre-Incorporation .list:nth-child(even){
+    background-color: var(--button-color);
+}
+.Pre-Incorporation .list li{
+    background-color: transparent;
+    list-style:circle ;
+    max-width: 150px;
+    padding: 5px 10px;
+}
+.Pre-Incorporation .cta-secondary{
+    background-color: transparent;
+    color: var(--background-color);
+    border: solid 1px;
+    border-radius: 5px;
+    margin-top:auto;
+    margin-bottom: 12px;
+}
+.Pre-Incorporation .cta-secondary:hover{
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+    border: none;
+}
+/* .Pre-Incorporation p{
+    font-size: var(--font-size-small);
+    text-align: left;
+} */
+/* .Pre-Incorporation li{
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -283,20 +328,11 @@ h4 {
     var(--font-size-medium)
 }
 
-.Pre-Incorporation li:nth-child(even){
-    background-color: var(--button-color);
+
 }
-.Pre-Incorporation .cta-secondary{
-    margin-top: 20px;
-    background-color: transparent;
-    color: var(--background-color);
-    border: solid 1px;
-    border-radius: 5px;
-}
-.Pre-Incorporation p{
-    color: var(--background-color);
-    /* font-weight: 400; */
-}
+
+
+/*--------- How-it-works section ----------------------*/
 
 .how-it-works ul{
     display: grid;
@@ -317,6 +353,8 @@ h4 {
     margin: 1rem;
     margin-left: 0;
 }
+
+/*--------- Contact Us section ----------------------*/
 
 .contact{
     display: flex;
@@ -358,6 +396,7 @@ label{
     font-weight: var(--font-weight-semibold);
 }
    
+/*--------- Services section ----------------------*/
 .footer{
     background-color: var(--primary-color-accent);
     color: var(--background-color);
